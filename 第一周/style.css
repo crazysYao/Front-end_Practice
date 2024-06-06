@@ -1,0 +1,59 @@
+/* Reset margin and padding */
+
+
+* {
+  /* 我需要框線 */
+  /* border: 1px solid red; */
+
+  color: #212f3c;
+
+
+}
+
+/* id area1 */
+#area1 {
+  padding: 0 15vw; /* padding 會隨著視窗寬度變化 */
+  font-size: larger;
+}
+
+#area2 {
+  font-size: larger;
+  /* padding: 0px 300px 0px 300px; */
+  padding: 0 15vw; /* padding 會隨著視窗寬度變化 */
+
+}
+
+
+/* 當視窗寬度大於 768px 時，.fixed-button 會顯示 */
+@media screen and (min-width: 8px) {
+  .fixed-button {
+    display: flex;
+  }
+}
+
+.fixed-button {
+  /* 其他的樣式設定... */
+  display: none; /* 預設為隱藏 */
+  position: fixed;
+  top: 150px;
+  left: 30px;
+  width: 65px;
+  height: 65px;
+  padding: 0;
+  font-size: 16px;
+  /* border: none; */
+  border: 1px solid lightgray; /* Add border color */
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+
+  flex-direction: column;
+}
+
+.fixed-button:hover {
+  border-color: gray; /* Change border color on hover */
+}
+
