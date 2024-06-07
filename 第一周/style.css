@@ -2,11 +2,7 @@
 
 
 * {
-  /* 我需要框線 */
-  /* border: 1px solid red; */
-
-  color: #212f3c;
-
+  /* border: 1px solid red ; */
 
 }
 
@@ -25,15 +21,10 @@
 
 
 /* 當視窗寬度大於 768px 時，.fixed-button 會顯示 */
-@media screen and (min-width: 8px) {
-  .fixed-button {
-    display: flex;
-  }
-}
+
 
 .fixed-button {
   /* 其他的樣式設定... */
-  display: none; /* 預設為隱藏 */
   position: fixed;
   top: 150px;
   left: 30px;
@@ -57,3 +48,12 @@
   border-color: gray; /* Change border color on hover */
 }
 
+@media screen and (max-width: 768px) {
+  .fixed-button {
+    display: none;
+  }
+}
+.card{
+padding: 20px;
+border-radius: 20px;
+}
